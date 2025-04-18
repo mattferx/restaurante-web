@@ -63,12 +63,12 @@
 
       <div class="separator"></div>
 
-      <a href="reservas@restaurante.com" class="topbar-item link">
+      <a href="reservas@rmirazur.com" class="topbar-item link">
         <div class="icon">
           <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">reservas@restaurante.com</span>
+        <span class="span">reservas@mirazur.com</span>
       </a>
 
     </div>
