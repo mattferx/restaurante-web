@@ -10,6 +10,9 @@ Permite administrar menús, pedidos, mesas y usuarios desde una plataforma intui
 - Laravel 10
 - PHP 8.x
 - MySQL
+- JS
+- CSS
+- HTML
 
 ---
 
@@ -26,7 +29,11 @@ cd restaurante-web
 
 ```bash
 composer install
+npm install
+node.js
 ```
+npm install
+node.js
 
 ### 3. Configurar el entorno
 
