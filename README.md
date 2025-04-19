@@ -7,7 +7,7 @@ Web para restaurante con frontend y backend. Incluye presentación del negocio, 
 ## 🚀 Tecnologías utilizadas
 
 - Laravel 12
-- PHP 8.x
+- PHP 8.2
 - MySQL
 - JS
 - CSS
