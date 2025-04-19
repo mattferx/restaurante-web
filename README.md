@@ -29,8 +29,8 @@ cd restaurante-web
 
 ```bash
 composer install
-npm install
 node.js
+npm install
 ```
 npm install
 node.js
