@@ -10,6 +10,10 @@
   <title>Mirazur</title>
 </head>
 <body>
+  
+      <!-- 
+        - #RESERVACIÓN
+      -->
 <section class="reservation">
   <div class="container">
     <div class="form reservation-form bg-black-10">
@@ -19,7 +23,7 @@
           Solicitud de reserva <a href="tel:+88123123456" class="link">+51 999999999</a>
           o complete el formulario de pedido
         </p>
-        <!-- ... resto del formulario igual ... -->
+        
       </form>
 
       <div class="form-right text-center" style="background-image: url('images/form-pattern.png')">
@@ -46,6 +50,11 @@
     </div>
   </div>
 </section>
+
+      <!-- 
+        - #PORQUE ELEGIRNOS
+      -->
+
 <section class="section features text-center" aria-label="features">
   <div class="container">
     <p class="section-subtitle label-2">Por Qué Elegirnos</p>
