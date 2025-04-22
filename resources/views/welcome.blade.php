@@ -1,120 +1,171 @@
-@extends('layouts.app')
-@vite('resources/css/app.css')
-@vite('resources/js/app.js')
-@section('content')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/app.css">
-</head>
-<body>
-  <!-- Aquí va todo el contenido principal -->
-<!--  Hero section  1:08:06-->
-  <main>
-    <article>
-    <!--
-    HERO
-    -->
-      <section class="hero text-center" aria-label="home" id="home"> 
+@extends('layouts.app') 
+@vite('resources/css/app.css') 
+@vite('resources/js/app.js') 
+@section('content') 
+<main>
+  <article>
 
-        <ul class="hero-slider" data-hero-slider>
+    <!-- HERO SECTION -->
+    <section class="hero text-center" aria-label="home" id="home">
+      <ul class="hero-slider" data-hero-slider>
+        <!-- Slide 1 -->
+        <li class="slider-item active" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="/images/pulpo.png" width="1880" height="950" alt="" class="img-cover">
+          </div>
+          <p class="label-2 section-subtitle slider-reveal">Auténtica Comida Española</p>
+          <h1 class="display-1 hero-title slider-reveal">
+            Por el amor a la <br> deliciosa comida española
+          </h1>
+          <p class="body-2 hero-text slider-reveal">
+            Ingredientes con alma, sabores con raíz.
+          </p>
+          <!-- Botón -->
+          <a href="#" class="btn btn-primary slider-reveal">
+            <span class="text text-1">Ver Nuestro Menú</span>
+            <span class="text text-2" aria-hidden="true">Ver Nuestro Menú</span>
+          </a>
+        </li>
 
-          <li class="slider-item active" data-hero-slider-item>
-            <div class="slider-bg">
-              <img src="/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
+        <!-- Slide 2 -->
+        <li class="slider-item active" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="/images/gazpacho.png" width="1880" height="950" alt="" class="img-cover">
+          </div>
 
-            <p class="label-2 section-subtitle slider-reveal">Traditional & Hygine</p>
-            
-            <h1 class="display-1 hero-title slider-reveal">
-              For the love of <br>
-              delicious food
-              
-              <p class="body-2 hero-text slider-reveal">
-                Come with family & feel joy of mouthwatering food
-              </p>
-              
-              <a href="#" class="btn btn-primary slider-reveal">
+          <p class="label-2 section-subtitle slider-reveal">Sabores que nos unen</p>
 
-                <span class="text text-1">View Our Menu</span>
+          <h1 class="display-1 hero-title slider-reveal">
+            Inspirados por la Tradición
+          </h1>
 
-                <span class="text text-2" aria-hidden="true">View Our Menu</span>
+          <p class="body-2 hero-text slider-reveal">
+            Memorias en cada plato.
+          </p>
 
-              </a>
-            </h1>
-          </li>
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">Ver Nuestro Menú</span>
+            <span class="text text-2" aria-hidden="true">Ver Nuestro Menú</span>
+          </a>
+        </li>
 
-          <li class="slider-item active" data-hero-slider-item>
-            <div class="slider-bg">
-              <img src="/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
+        <!-- Slide 3 -->
+        <li class="slider-item active" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="/images/paellavalenciana.png" width="1880" height="950" alt="" class="img-cover">
+          </div>
 
-            <p class="label-2 section-subtitle slider-reveal">Delightful experience</p>
-            
-            <h1 class="display-1 hero-title slider-reveal">
-              Flavors Inspired by <br>
-              the Seasons
-              
-              <p class="body-2 hero-text slider-reveal">
-                Come with family & feel joy of mouthwatering food
-              </p>
-              
-              <a href="#" class="btn btn-primary">
+          <p class="label-2 section-subtitle slider-reveal">Sabor y Cultura en Cada Plato</p>
 
-                <span class="text text-1">View Our Menu</span>
+          <h1 class="display-1 hero-title slider-reveal">
+            Cada Sabor Cuenta una <br> Historia
+          </h1>
 
-                <span class="text text-2" aria-hidden="true">View Our Menu</span>
+          <p class="body-2 hero-text slider-reveal">
+            <span class="accent-text">Cada plato, una historia.</span> Ven y vívela.
+          </p>
 
-              </a>
-            </h1>
-          </li>
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">Ver Nuestro Menú</span>
+            <span class="text text-2" aria-hidden="true">Ver Nuestro Menú</span>
+          </a>
+        </li>
+      </ul>
 
-          <li class="slider-item active" data-hero-slider-item>
-            <div class="slider-bg">
-              <img src="/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
+      <!-- Botón-->
+      <button class="slider-btn prev" aria-label="deslizar al anterior" data-prev-btn>
+        <ion-icon name="chevron-back"></ion-icon>
+      </button>
 
-            <p class="label-2 section-subtitle slider-reveal">Delightful experience</p>
-            
-            <h1 class="display-1 hero-title slider-reveal">
-              Where every flavor <br>
-              thells a story
-              
-              <p class="body-2 hero-text slider-reveal">
-                Come with family & feel joy of mouthwatering food
-              </p>
-              
-              <a href="#" class="btn btn-primary">
+      <!-- Botón de slide siguiente -->
+      <button class="slider-btn next" aria-label="deslizar al siguiente" data-next-btn>
+        <ion-icon name="chevron-forward"></ion-icon>
+      </button>
 
-                <span class="text text-1">View Our Menu</span>
+      <!-- Botón de reserva -->
+      <a href="" class="hero-btn has-after">
+        <img src="/images/hero-icon.png" width="48" height="48" alt="icono de reserva">
+        <span class="label-2 text-center span">Reserva una Mesa</span>
+      </a>
 
-                <span class="text text-2" aria-hidden="true">View Our Menu</span>
+    </section>
+  </article>
+  {{-- Servicios --}}
+  <section class="section service bg-black-10 text-center" aria-label="service">
+    <div class="container">
+      <p class="section-subtitle label-2">Sabores para la realeza</p>
 
-              </a>
-            </h1>
-          </li>
+  <h2 class="headline-1 section-title">Ofrecemos lo mejor de primera categoría</h2>
 
-        </ul>
-      
-        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
-          <ion-icon name="chevron-back"></ion-icon>
-        </button>
+  <p class="section-text">
+  La gastronomía española es una fusión de colores, aromas y emociones. Cada plato cuenta 
+  una historia, cada ingrediente refleja una 
+  tierra llena de tradición y carácter.
+  </p>
 
-        <button class="slider-btn next" aria-label="slide to next" datanext-btn>
-          <ion-icon name="chevron-forward"></ion-icon>
-        </button>
+  <ul class="grid-list">
 
-        <a href="" class="hero-btn has-after">
-          <img src="/images/hero-icon.png" width="48" height="48" alt="booking icon">
-          <span class="label-2 text-center span">Book A Tab</span>
+    <li>
+      <div class="service-card">
+
+        <a href="#" class="has-before hover:shine">
+          <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+            <img src="images/Desayuno.png" width="285" height="336" loading="lazy" alt="Desayuno"
+              class="img-cover">
+          </figure>
         </a>
 
-      </section>
-    </article>
-  </main>
-</body>
-</html>
+        <div class="card-content">
+
+          <h3 class="title-4 card-title">
+            <a href="#">Desayuno</a>
+          </h3>
+
+          <a href="#" class="btn-text hover-underline label-2">Ver Menu</a>
+
+        </div>
+
+      </div>
+    </li>
+
+    <li>
+      <div class="service-card">
+
+        <a href="#" class="has-before hover:shine">
+          <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+            <img src="images/Aperitivos.png" width="285" height="336" loading="lazy" alt="Aperitivos"
+              class="img-cover">
+          </figure>
+        </a>
+
+        <div class="card-content">
+
+          <h3 class="title-4 card-title">
+            <a href="#">Aperitivos</a>
+          </h3>
+
+          <a href="#" class="btn-text hover-underline label-2">Ver Menu</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="service-card">
+
+          <a href="#" class="has-before hover:shine">
+            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+              <img src="images/Bebida.png" width="285" height="336" loading="lazy" alt="Bebidas"
+                class="img-cover">
+            </figure>
+          </a>
+
+          <div class="card-content">
+
+            <h3 class="title-4 card-title">
+              <a href="#">Bebidas</a>
+            </h3>
+
+            <a href="#" class="btn-text hover-underline label-2">Ver Menu</a>
+</main>
+
 @endsection
+

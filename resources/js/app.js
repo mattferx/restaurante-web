@@ -116,7 +116,7 @@ let autoSlideInterval;
 
 const autoSlide = function () {
   autoSlideInterval = setInterval(function () {
-    slideNext(); // Va a la siguiente diapositiva automáticamente
+    slideNext(); 
   }, 7000);
 }
 
