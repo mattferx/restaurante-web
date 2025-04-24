@@ -163,10 +163,10 @@ html {
 body {
   background-color: var(--eerie-black-1);
   color: var(--white);
-  font-family: var(--fontFamily-dm_sans);
-  font-size: var(--fontSize-body-4);
-  font-weight: var(--weight-regular);
-  line-height: var(--lineHeight-5);
+    font-family: var(--fontFamily-dm_sans);
+    font-size: var(--fontSize-body-4);
+    font-weight: var(--weight-regular);
+    line-height: var(--lineHeight-5);
   overflow: hidden;
   height: 300vh;
 }
@@ -308,13 +308,12 @@ body.nav-active { overflow: hidden; }
 }
 
 .section-subtitle::after {
-  content: url('../images/separator.svg');
+  content: url('/public/images/separator.svg');
   display: block;
   width: 100px;
   margin-inline: auto;
   margin-block-start: 5px;
 }
-
 .btn {
   position: relative;
   color: var(--gold-crayola);
@@ -974,7 +973,7 @@ body.nav-active { overflow: hidden; }
   transform: translateX(-50%);
   width: 140px;
   height: 100%;
-  background-image: url('../images/img-pattern.svg');
+  background-image: url('/public/images/img-pattern.svg');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -997,6 +996,14 @@ body.nav-active { overflow: hidden; }
 
 
 
+/* Se agregó este estilo porque el estilo original no se estaba mostrando correctamente */
+.section-text {
+  color: var(--white);
+  font-family: var(--fontFamily-dm_sans);
+  font-size: var(--fontSize-body-4);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineHeight-5);
+}
 
 
 /*-----------------------------------*\
@@ -1045,13 +1052,13 @@ body.nav-active { overflow: hidden; }
   left: 50%;
   transform: translateX(-50%);
   width: 140px;
-  background-image: url('../images/img-pattern.svg');
+  background-image: url('/public/images/img-pattern.svg');
   background-repeat: repeat;
 }
 
 .about .abs-img-2::before {
   inset: 0;
-  background-image: url('../images/badge-2-bg.png');
+  background-image: url('/public/images/badge-2-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
   animation: rotate360 15s linear infinite;
