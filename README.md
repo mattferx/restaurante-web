@@ -1,14 +1,13 @@
 # Restaurante Web 🍽️
 
-Sistema web para la gestión de un restaurante desarrollado con Laravel.  
-Permite administrar menús, pedidos, mesas y usuarios desde una plataforma intuitiva y moderna.
+Web para restaurante con frontend y backend. Incluye presentación del negocio, menú, y un sistema de contacto con validaciones del lado del servidor.
 
 ---
 
 ## 🚀 Tecnologías utilizadas
 
-- Laravel 10
-- PHP 8.x
+- Laravel 12
+- PHP 8.2
 - MySQL
 - JS
 - CSS
@@ -29,8 +28,8 @@ cd restaurante-web
 
 ```bash
 composer install
-npm install
 node.js
+npm install
 ```
 npm install
 node.js

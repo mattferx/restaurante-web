@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-  @include('partials.header') 
+  
+  <head>
+    @include('partials.header') 
+  </head>
 
-  @yield('content')
+  <body>
+    @yield('content')
+    @include('partials.footer') 
+  </body>
 
-  @include('partials.footer') 
+</html>
