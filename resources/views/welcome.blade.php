@@ -1,200 +1,257 @@
 @extends('layouts.app')
 @vite('resources/css/app.css')
 @vite('resources/js/app.js')
+
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mirazur</title>
-</head>
-<body>
-  
-      <!-- 
-        - #RESERVACIÓN
-      -->
-<section class="reservation">
-  <div class="container">
-    <div class="form reservation-form bg-black-10">
-      <form action="" class="form-left">
-        <h2 class="headline-1 text-center">Reservación Online</h2>
-        <p class="form-text text-center">
-          Solicitud de reserva <a href="tel:+88123123456" class="link">+51 999999999</a>
-          o complete el formulario de pedido
-        </p>
-        
-      </form>
+<main>
+  <article>
 
-      <div class="form-right text-center" style="background-image: url('images/form-pattern.png')">
-        <h2 class="headline-1 text-center">Contáctenos</h2>
-        <p class="contact-label">Solicitud de Reserva</p>
-        <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+51 999999999</a>
-        <div class="separator"></div>
-        <p class="contact-label">Ubicación</p>
-        <address class="body-4">
-          Calle del Restaurante, Ciudad Deliciosa, <br>
-          Barcelona 9578, España
-        </address>
-        <p class="contact-label">Horario de Almuerzo</p>
-        <p class="body-4">
-          Lunes a Domingo <br>
-          11.00 am - 2.30pm
-        </p>
-        <p class="contact-label">Horario de Cena</p>
-        <p class="body-4">
-          Lunes a Domingo <br>
-          05.00 pm - 10.00pm
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- HERO -->
+    <section class="hero text-center" aria-label="home" id="home"> 
+      <ul class="hero-slider" data-hero-slider>
 
-      <!-- 
-        - #PORQUE ELEGIRNOS
-      -->
-
-<section class="section features text-center" aria-label="features">
-  <div class="container">
-    <p class="section-subtitle label-2">Por Qué Elegirnos</p>
-    <h2 class="headline-1 section-title">Nuestras Fortalezas</h2>
-    <ul class="grid-list">
-      <li class="feature-item">
-        <div class="feature-card">
-          <div class="card-icon">
-            <img src="images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+        <li class="slider-item active" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
           </div>
-          <h3 class="title-2 card-title">Comida Higiénica</h3>
-          <p class="label-1 card-text">Lorem Ipsum es simplemente texto de relleno de imprenta.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-card">
-          <div class="card-icon">
-            <img src="images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+
+          <p class="label-2 section-subtitle slider-reveal">Traditional & Hygine</p>
+          
+          <h1 class="display-1 hero-title slider-reveal">
+            For the love of <br> delicious food
+          </h1>
+
+          <p class="body-2 hero-text slider-reveal">
+            Come with family & feel joy of mouthwatering food
+          </p>
+
+          <a href="#" class="btn btn-primary slider-reveal">
+            <span class="text text-1">View Our Menu</span>
+            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+          </a>
+        </li>
+
+        <li class="slider-item active" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
           </div>
-          <h3 class="title-2 card-title">Ambiente Fresco</h3>
-          <p class="label-1 card-text">Lorem Ipsum es simplemente texto de relleno de imprenta.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-card">
-          <div class="card-icon">
-            <img src="images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
-          </div>
-          <h3 class="title-2 card-title">Chefs Expertos</h3>
-          <p class="label-1 card-text">Lorem Ipsum es simplemente texto de relleno de imprenta.</p>
-        </div>
-      </li>
-      <li class="feature-item">
-        <div class="feature-card">
-          <div class="card-icon">
-            <img src="images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
-          </div>
-          <h3 class="title-2 card-title">Eventos y Fiestas</h3>
-          <p class="label-1 card-text">Lorem Ipsum es simplemente texto de relleno de imprenta.</p>
-        </div>
-      </li>
-    </ul>
-    
-  </div>
-</section>
 
-      <!-- 
-        - #PPROXIMOS EVENTOS
-      -->
+          <p class="label-2 section-subtitle slider-reveal">Delightful experience</p>
+          
+          <h1 class="display-1 hero-title slider-reveal">
+            Flavors Inspired by <br> the Seasons
+          </h1>
 
-      <section class="section event bg-black-10" aria-label="event">
-        <div class="container">
-
-          <p class="section-subtitle label-2 text-center">Actualizaciones recientes</p>
-
-          <h2 class="section-title headline-1 text-center">Próximo evento</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="images/event-1.jpg" width="350" height="450" loading="lazy"
-                    alt="Sabor tan bueno que intentarás comer con los ojos." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2025-04-22">22/04/2025</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Sabor de los alimentos</p>
-
-                  <h3 class="card-title title-2 text-center">
-                  Sabor tan bueno que intentarás comer con los ojos.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="images/event-2.jpg" width="350" height="450" loading="lazy"
-                    alt="Sabor tan bueno que intentarás comer con los ojos." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2025-04-22">22/04/2025</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
-
-                  <h3 class="card-title title-2 text-center">
-                  Sabor tan bueno que intentarás comer con los ojos.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="images/event-4.jpg" width="350" height="450" loading="lazy"
-                    alt="Sabor tan bueno que intentarás comer con los ojos." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2025-04-22">22/04/2025</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Recipie</p>
-
-                  <h3 class="card-title title-2 text-center">
-                  Sabor tan bueno que intentarás comer con los ojos.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
+          <p class="body-2 hero-text slider-reveal">
+            Come with family & feel joy of mouthwatering food
+          </p>
 
           <a href="#" class="btn btn-primary">
-            <span class="text text-1">Ver Nuestro Blog</span>
-
-            <span class="text text-2" aria-hidden="true">Ver Nuestro Blog</span>
+            <span class="text text-1">View Our Menu</span>
+            <span class="text text-2" aria-hidden="true">View Our Menu</span>
           </a>
+        </li>
 
+        <li class="slider-item active" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+          </div>
+
+          <p class="label-2 section-subtitle slider-reveal">Delightful experience</p>
+          
+          <h1 class="display-1 hero-title slider-reveal">
+            Where every flavor <br> tells a story
+          </h1>
+
+          <p class="body-2 hero-text slider-reveal">
+            Come with family & feel joy of mouthwatering food
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View Our Menu</span>
+            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+          </a>
+        </li>
+
+      </ul>
+    
+      <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+        <ion-icon name="chevron-back"></ion-icon>
+      </button>
+
+      <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+        <ion-icon name="chevron-forward"></ion-icon>
+      </button>
+
+      <a href="#" class="hero-btn has-after">
+        <img src="/images/hero-icon.png" width="48" height="48" alt="booking icon">
+        <span class="label-2 text-center span">Book A Tab</span>
+      </a>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="section service bg-black-10 text-center" aria-label="service">
+      <div class="container">
+
+        <p class="section-subtitle label-2">Sabores para la realeza</p>
+        <h2 class="headline-1 section-title">Ofrecemos lo mejor de primera categoría</h2>
+        <p class="section-text">
+          La gastronomía española es una fusión de colores, aromas y emociones. Cada plato cuenta 
+          una historia, cada ingrediente refleja una 
+          tierra llena de tradición y carácter.
+        </p>
+
+        <ul class="grid-list">
+
+          <li>
+            <div class="service-card">
+              <a href="#" class="has-before hover:shine">
+                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                  <img src="images/Desayuno.png" width="285" height="336" loading="lazy" alt="Desayuno" class="img-cover">
+                </figure>
+              </a>
+              <div class="card-content">
+                <h3 class="title-4 card-title"><a href="#">Desayuno</a></h3>
+                <a href="#" class="btn-text hover-underline label-2">Ver Menu</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <a href="#" class="has-before hover:shine">
+                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                  <img src="images/Aperitivos.png" width="285" height="336" loading="lazy" alt="Aperitivos" class="img-cover">
+                </figure>
+              </a>
+              <div class="card-content">
+                <h3 class="title-4 card-title"><a href="#">Aperitivos</a></h3>
+                <a href="#" class="btn-text hover-underline label-2">Ver Menu</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <a href="#" class="has-before hover:shine">
+                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                  <img src="images/Bebida.png" width="285" height="336" loading="lazy" alt="Bebidas" class="img-cover">
+                </figure>
+              </a>
+              <div class="card-content">
+                <h3 class="title-4 card-title"><a href="#">Bebidas</a></h3>
+                <a href="#" class="btn-text hover-underline label-2">Ver Menu</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <img src="images/shape-1.png" width="246" height="412" loading="lazy" alt="shape" class="shape shape-1 move-anim">
+        <img src="images/shape-2.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-2 move-anim">
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about text-center" aria-labelledby="about-label" id="about">
+      <div class="container">
+
+        <div class="about-content">
+          <p class="label-2 section-subtitle" id="about-label">Nuestra historia</p>
+          <h2 class="headline-1 section-title">Cada sabor cuenta una historia</h2>
+          <p class="section-text">
+            Hoy, Javier es conocido como “el alquimista del sabor español”. En su restaurante, 
+            cada plato es una celebración de su cultura: sabores intensos, productos frescos y 
+            una pasión que se nota en cada detalle.
+          </p>
+
+          <div class="contact-label">Reservar a través de llamada</div>
+          <a href="tel:+51 902106989" class="body-1 contact-number hover-underline">+51 902106989</a>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">Leer más</span>
+            <span class="text text-2" aria-hidden="true">Leer más</span>
+          </a>
         </div>
-      </section>
 
-    </article>
-  </main>
+        <figure class="about-banner">
+          <img src="images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1">
+          <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+            <img src="images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt="" class="w-100">
+          </div>
+          <div class="abs-img abs-img-2 has-before">
+            <img src="images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+          </div>
+        </figure>
 
+        <img src="images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
 
+      </div>
+    </section>
+    <!-- RESERVACIÓN -->
+    <section class="reservation">
+      <div class="container">
+        <div class="form reservation-form bg-black-10">
+          <form action="" class="form-left">
+            <h2 class="headline-1 text-center">Reservación Online</h2>
+            <p class="form-text text-center">
+              Solicitud de reserva <a href="tel:+88123123456" class="link">+51 999999999</a>
+              o complete el formulario de pedido
+            </p>
+          </form>
 
-</body>
-</html>
+          <div class="form-right text-center" style="background-image: url('images/form-pattern.png')">
+            <h2 class="headline-1 text-center">Contáctenos</h2>
+            <p class="contact-label">Solicitud de Reserva</p>
+            <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+51 999999999</a>
+            <div class="separator"></div>
+            <p class="contact-label">Ubicación</p>
+            <address class="body-4">
+              Calle del Restaurante, Ciudad Deliciosa, <br>
+              Barcelona 9578, España
+            </address>
+            <p class="contact-label">Horario de Almuerzo</p>
+            <p class="body-4">
+              Lunes a Domingo <br>
+              11.00 am - 2.30pm
+            </p>
+            <p class="contact-label">Horario de Cena</p>
+            <p class="body-4">
+              Lunes a Domingo <br>
+              05.00 pm - 10.00pm
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- PORQUE ELEGIRNOS -->
+    <section class="section features text-center" aria-label="features">
+      <div class="container">
+        <p class="section-subtitle label-2">Por Qué Elegirnos</p>
+        <h2 class="headline-1 section-title">Nuestras Fortalezas</h2>
+        <ul class="grid-list">
+          <!-- ... tarjetas de características ... -->
+        </ul>
+      </div>
+    </section>
 
+    <!-- PROXIMOS EVENTOS -->
+    <section class="section event bg-black-10" aria-label="event">
+      <div class="container">
+        <p class="section-subtitle label-2 text-center">Actualizaciones recientes</p>
+        <h2 class="section-title headline-1 text-center">Próximo evento</h2>
+        <ul class="grid-list">
+          <!-- ... tarjetas de eventos ... -->
+        </ul>
+        <a href="#" class="btn btn-primary">
+          <span class="text text-1">Ver Nuestro Blog</span>
+          <span class="text text-2" aria-hidden="true">Ver Nuestro Blog</span>
+        </a>
+      </div>
+    </section>
+
+  </article>
+</main>
 @endsection

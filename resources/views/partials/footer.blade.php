@@ -1,5 +1,4 @@
-
-{{-- <footer class="footer section has-bg-image text-center" style="">
+{{--  <footer class="footer section has-bg-image text-center" style="">
     <div class="container">
 
       <!-- Bloque superior: 3 columnas (logo+contacto, menú, redes) -->
