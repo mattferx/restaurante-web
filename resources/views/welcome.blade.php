@@ -189,6 +189,68 @@
 
       </div>
     </section>
+    <!-- RESERVACIÓN -->
+    <section class="reservation">
+      <div class="container">
+        <div class="form reservation-form bg-black-10">
+          <form action="" class="form-left">
+            <h2 class="headline-1 text-center">Reservación Online</h2>
+            <p class="form-text text-center">
+              Solicitud de reserva <a href="tel:+88123123456" class="link">+51 999999999</a>
+              o complete el formulario de pedido
+            </p>
+          </form>
+
+          <div class="form-right text-center" style="background-image: url('images/form-pattern.png')">
+            <h2 class="headline-1 text-center">Contáctenos</h2>
+            <p class="contact-label">Solicitud de Reserva</p>
+            <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+51 999999999</a>
+            <div class="separator"></div>
+            <p class="contact-label">Ubicación</p>
+            <address class="body-4">
+              Calle del Restaurante, Ciudad Deliciosa, <br>
+              Barcelona 9578, España
+            </address>
+            <p class="contact-label">Horario de Almuerzo</p>
+            <p class="body-4">
+              Lunes a Domingo <br>
+              11.00 am - 2.30pm
+            </p>
+            <p class="contact-label">Horario de Cena</p>
+            <p class="body-4">
+              Lunes a Domingo <br>
+              05.00 pm - 10.00pm
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORQUE ELEGIRNOS -->
+    <section class="section features text-center" aria-label="features">
+      <div class="container">
+        <p class="section-subtitle label-2">Por Qué Elegirnos</p>
+        <h2 class="headline-1 section-title">Nuestras Fortalezas</h2>
+        <ul class="grid-list">
+          <!-- ... tarjetas de características ... -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROXIMOS EVENTOS -->
+    <section class="section event bg-black-10" aria-label="event">
+      <div class="container">
+        <p class="section-subtitle label-2 text-center">Actualizaciones recientes</p>
+        <h2 class="section-title headline-1 text-center">Próximo evento</h2>
+        <ul class="grid-list">
+          <!-- ... tarjetas de eventos ... -->
+        </ul>
+        <a href="#" class="btn btn-primary">
+          <span class="text text-1">Ver Nuestro Blog</span>
+          <span class="text text-2" aria-hidden="true">Ver Nuestro Blog</span>
+        </a>
+      </div>
+    </section>
 
   </article>
 </main>
