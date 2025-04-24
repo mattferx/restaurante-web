@@ -110,24 +110,25 @@
 
           <div class="about-content">
 
-            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+            <p class="label-2 section-subtitle" id="about-label">Nuestra historia</p>
 
-            <h2 class="headline-1 section-title">Every Fla vor Tells a Story</h2>
+            <h2 class="headline-1 section-title">Cada sabor cuenta una historia</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book It has survived not only five centuries, but also the leap into.
+            Hoy, Javier es conocido como “el alquimista del sabor español”. En su restaurante, 
+            cada plato es una celebración de su cultura: sabores intensos, productos frescos y 
+            una pasión que se nota en cada detalle. Para él, cocinar no es solo alimentar, sino 
+            contar la historia de un país con cada bocado.
             </p>
 
-            <div class="contact-label">Book Through Call</div>
+            <div class="contact-label">Reservar a través de llamada</div>
 
-            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
+            <a href="tel:+51 902106989" class="body-1 contact-number hover-underline">+51 902106989</a>
 
             <a href="#" class="btn btn-primary">
-              <span class="text text-1">Read More</span>
+              <span class="text text-1">Leer más</span>
 
-              <span class="text text-2" aria-hidden="true">Read More</span>
+              <span class="text text-2" aria-hidden="true">Leer más</span>
             </a>
 
           </div>
