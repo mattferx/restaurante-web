@@ -11,14 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  
   @vite('resources/css/app.css')
-  <!-- 
-    - precarga de imágenes 
-  -->
-  {{-- <link rel="preload" as="image" href="/images/hero-slider-1.jpg">
-  <link rel="preload" as="image" href="/images/hero-slider-2.jpg">
-  <link rel="preload" as="image" href="/images/hero-slider-3.jpg"> --}}
-</head>
 
 <body id="inicio">
   <div class="preload" data-preaload>
@@ -39,7 +33,7 @@
         </div>
 
         <span class="span">
-           Carrer del Bisbe, 08002 Barcelona, España
+           Carrer del Bisbe, 08002 Barcelona
         </span>
       </address>
 
@@ -52,14 +46,6 @@
 
         <span class="span">Horario: 8:00 am a 10:00 pm</span>
       </div>
-
-      <a href="tel:+51 902106989" class="topbar-item link">
-        <div class="icon">
-          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">+51 902106989</span>
-      </a>
 
       <div class="separator"></div>
 
@@ -118,15 +104,9 @@
             </a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
-              <div class="separator"></div>
-              <span class="span">Nuestros Chefs</span>
-            </a>
-          </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="#contacto" class="navbar-link hover-underline">
               <div class="separator"></div>
               <span class="span">Contacto</span>
             </a>
@@ -136,28 +116,29 @@
 
         <div class="text-center">
           <p class="headline-1 navbar-title">Visítanos</p>
-
+        
           <address class="body-4">
-            📍 Carrer del Bisbe,, <br>
-            08002 Barcelona, España
+            📍 Carrer del Bisbe,<br>
+            08002 Barcelona
           </address>
-
-          <p class="body-4 navbar-text">Abierto: 9:30 am - 2:30pm</p>
-
-          <a href="reservas@mirazur.com" class="body-4 sidebar-link">reservas@mirazur.com</a>
-
+        
+          <p class="body-4 navbar-text">Abierto: 8:00 am - 10:00pm</p>
+        
+          <a href="mailto:reservas@mirazur.com" class="body-4 sidebar-link">reservas@mirazur.com</a>
+        
           <div class="separator"></div>
-
-          <p class="contact-label">Solicitud de Reserva</p>
-
-          <a href="tel:+51 902106989" class="body-1 contact-number hover-underline">
-            +51 902106989
+        
+          <p class="contact-label">¿Tienes dudas sobre tu reserva?</p>
+        
+          <a href="https://wa.me/51902106989?text=Hola,%20tengo%20una%20duda%20sobre%20mi%20reserva" class="body-1 contact-number hover-underline">
+            Escríbenos por WhatsApp
           </a>
         </div>
+        
 
       </nav>
 
-      <a href="#" class="btn btn-secondary">
+      <a href="#contacto" class="btn btn-secondary">
         <span class="text text-1">Reservar Mesa</span>
         <span class="text text-2" aria-hidden="true">Reservar Mesa</span>
       </a>
