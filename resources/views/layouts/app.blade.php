@@ -7,7 +7,8 @@
 
   <body>
     @yield('content')
-    @include('partials.footer') 
   </body>
-
+<footer>
+  @include('partials.footer')
+</footer>
 </html>
