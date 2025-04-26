@@ -70,7 +70,7 @@
   <header class="header" data-header>
     <div class="container">
       <a href="#" class="logo">
-        <img src="/images/mirazurrojo.svg" width="160" height="50" alt="Grilli - Inicio">
+        <img src="{{asset('images/mirazurrojo.svg') }}" width="160" height="50" alt="Grilli - Inicio">
       </a>
       <!-- Menú de navegación -->
       <nav class="navbar" data-navbar>
@@ -78,7 +78,7 @@
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
         <a href="#" class="logo">
-          <img src="/images/mirazurrojo.svg" width="160" height="50" alt="Grilli - Inicio">
+          <img src="{{asset('images/mirazurrojo.svg') }}" width="160" height="50" alt="Grilli - Inicio">
         </a>
         <!-- Lista de enlaces del menú -->
         <ul class="navbar-list">
