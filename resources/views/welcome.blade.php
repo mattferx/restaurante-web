@@ -108,7 +108,7 @@
 
               <a href="#" class="has-before hover:shine">
                 <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                  <img src="/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Desayunos"
+                  <img src="/images/Desayuno.png" width="285" height="336" loading="lazy" alt="Desayunos"
                     class="img-cover">
                 </figure>
               </a>
@@ -131,7 +131,7 @@
 
               <a href="#" class="has-before hover:shine">
                 <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                  <img src="/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Entradas"
+                  <img src="/images/Aperitivos.png" width="285" height="336" loading="lazy" alt="Entradas"
                     class="img-cover">
                 </figure>
               </a>
@@ -154,7 +154,7 @@
 
               <a href="#" class="has-before hover:shine">
                 <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                  <img src="/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Bebidas"
+                  <img src="/images/Bebida.png" width="285" height="336" loading="lazy" alt="Bebidas"
                     class="img-cover">
                 </figure>
               </a>
@@ -197,10 +197,6 @@
             Nacimos como un pequeño rincón familiar donde se compartían recetas heredadas y momentos inolvidables. Cada ingrediente que usamos, cada plato que servimos, lleva consigo la historia de generaciones, la riqueza de nuestra tierra y la calidez de un hogar.
             Para nosotros, cocinar no es solo preparar comida: es conectar contigo, es revivir memorias, es rendir homenaje a lo que somos. Y cada vez que te sientas en nuestra mesa, pasas a ser parte de esta historia que sigue viva.
           </p>
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">Leer Más</span>
-            <span class="text text-2" aria-hidden="true">Leer Más</span>
-          </a>
 
         </div>
 
@@ -434,11 +430,6 @@
       </li>
 
     </ul>
-
-    <a href="#" class="btn btn-primary">
-      <span class="text text-1">Explorar Menú Completo</span>
-      <span class="text text-2" aria-hidden="true">Explorar Menú Completo</span>
-    </a>
 
     <img src="/images/shape-5.png" width="921" height="1036" loading="lazy" alt="" class="shape shape-2 move-anim">
     <img src="/images/shape-6.png" width="343" height="345" loading="lazy" alt="" class="shape shape-3 move-anim">
@@ -705,11 +696,6 @@
       </li>
 
     </ul>
-
-    <a href="#" class="btn btn-primary">
-      <span class="text text-1">Descubrir Más Eventos</span>
-      <span class="text text-2" aria-hidden="true">Descubrir Más Eventos</span>
-    </a>
 
   </div>
 </section>
