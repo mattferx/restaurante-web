@@ -43,9 +43,9 @@
 
         <!-- Columna 3 - Redes sociales -->
         <ul class="footer-list">
-          <li><a href="https://facebook.com/mirazur" target="_blank" class="label-2 footer-link hover-underline">Facebook</a></li>
-          <li><a href="https://instagram.com/mirazur" target="_blank" class="label-2 footer-link hover-underline">Instagram</a></li>
-          <li><a href="https://maps.app.goo.gl/mirazur" target="_blank" class="label-2 footer-link hover-underline">Google Maps</a></li>
+          <li><a href="https://www.facebook.com/mirazur.fr/" target="_blank" class="label-2 footer-link hover-underline">Facebook</a></li>
+          <li><a href="https://www.instagram.com/restaurantmirazur/" target="_blank" class="label-2 footer-link hover-underline">Instagram</a></li>
+          <li><a href="https://maps.app.goo.gl/bUo8xiDY4eyq3zX7A" target="_blank" class="label-2 footer-link hover-underline">Google Maps</a></li>
         </ul>
 
       </div>

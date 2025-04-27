@@ -224,7 +224,7 @@
 <section class="special-dish text-center" aria-labelledby="dish-label">
 
   <div class="special-dish-banner">
-    <img src="/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="Paella Valenciana" class="img-cover">
+    <img src="/images/Paella1.jpeg" width="940" height="900" loading="lazy" alt="Paella Valenciana" class="img-cover">
   </div>
 
   <div class="special-dish-content bg-black-10">
@@ -256,7 +256,7 @@
   </div>
 
   <img src="/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
-  <img src="/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+  <img src="/images/shape-8.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
 
 </section>
 <!-- MENÚ -->
@@ -273,7 +273,7 @@
         <div class="menu-card hover:card">
 
           <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-            <img src="/images/menu-1.png" width="100" height="100" loading="lazy" alt="Gazpacho Andaluz" class="img-cover">
+            <img src="/images/menu1.jpg" width="100" height="100" loading="lazy" alt="Gazpacho Andaluz" class="img-cover">
           </figure>
 
           <div>
@@ -301,7 +301,7 @@
         <div class="menu-card hover:card">
 
           <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-            <img src="/images/menu-2.png" width="100" height="100" loading="lazy" alt="Pulpo a la Gallega" class="img-cover">
+            <img src="/images/menu2.jpg" width="100" height="100" loading="lazy" alt="Pulpo a la Gallega" class="img-cover">
           </figure>
 
           <div>
@@ -327,7 +327,7 @@
         <div class="menu-card hover:card">
 
           <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-            <img src="/images/menu-3.png" width="100" height="100" loading="lazy" alt="Tortilla Española" class="img-cover">
+            <img src="/images/menu3.jpg" width="100" height="100" loading="lazy" alt="Tortilla Española" class="img-cover">
           </figure>
 
           <div>
@@ -353,7 +353,7 @@
         <div class="menu-card hover:card">
 
           <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-            <img src="/images/menu-4.png" width="100" height="100" loading="lazy" alt="Cochinillo Segoviano" class="img-cover">
+            <img src="/images/menu4.jpg" width="100" height="100" loading="lazy" alt="Cochinillo Segoviano" class="img-cover">
           </figure>
 
           <div>
@@ -381,7 +381,7 @@
         <div class="menu-card hover:card">
 
           <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-            <img src="/images/menu-5.png" width="100" height="100" loading="lazy" alt="Croquetas de Jamón" class="img-cover">
+            <img src="/images/menu5.jpg" width="100" height="100" loading="lazy" alt="Croquetas de Jamón" class="img-cover">
           </figure>
 
           <div>
@@ -407,7 +407,7 @@
         <div class="menu-card hover:card">
 
           <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-            <img src="/images/menu-6.png" width="100" height="100" loading="lazy" alt="Churros con Chocolate" class="img-cover">
+            <img src="/images/menu6.jpg" width="100" height="100" loading="lazy" alt="Churros con Chocolate" class="img-cover">
           </figure>
 
           <div>
@@ -627,10 +627,10 @@
         <div class="event-card has-before hover:shine">
 
           <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-            <img src="/images/event-1.jpg" width="350" height="450" loading="lazy"
+            <img src="/images/opcion1.jpg" width="350" height="450" loading="lazy"
               alt="Noche de Flamenco y Tapas" class="img-cover">
 
-            <time class="publish-date label-2" datetime="2023-11-15">15/11/2023</time>
+            <time class="publish-date label-2" datetime="2025-04-26">26/04/2025</time>
           </div>
 
           <div class="card-content">
@@ -651,10 +651,10 @@
         <div class="event-card has-before hover:shine">
 
           <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-            <img src="/images/event-2.jpg" width="350" height="450" loading="lazy"
+            <img src="/images/opcion2.jpg" width="350" height="450" loading="lazy"
               alt="Ruta de Vinos Españoles" class="img-cover">
 
-            <time class="publish-date label-2" datetime="2023-11-22">22/11/2023</time>
+            <time class="publish-date label-2" datetime="2025-04-26">26/04/2025</time>
           </div>
 
           <div class="card-content">
@@ -675,10 +675,10 @@
         <div class="event-card has-before hover:shine">
 
           <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-            <img src="/images/event-3.jpg" width="350" height="450" loading="lazy"
+            <img src="/images/opcion3.jpg" width="350" height="450" loading="lazy"
               alt="Taller de Paellas" class="img-cover">
 
-            <time class="publish-date label-2" datetime="2023-11-29">29/11/2023</time>
+            <time class="publish-date label-2" datetime="2025-04-26">26/04/2025</time>
           </div>
 
           <div class="card-content">
