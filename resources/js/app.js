@@ -155,5 +155,29 @@ window.addEventListener("mousemove", function (event) {
     y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
     parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`; // Aplica el movimiento
   }
+  document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.testimonios-slider', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        }
+      }
+    });
+  });
+  
 
 });

@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  
   @vite('resources/css/app.css')
 </head>
 
@@ -70,7 +71,7 @@
   <header class="header" data-header>
     <div class="container">
       <a href="#" class="logo">
-        <img src="/images/mirazurrojo.svg" width="160" height="50" alt="Grilli - Inicio">
+        <img src="{{asset('images/mirazurrojo.svg') }}" width="160" height="50" alt="Grilli - Inicio">
       </a>
       <!-- Menú de navegación -->
       <nav class="navbar" data-navbar>
@@ -78,7 +79,7 @@
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
         <a href="#" class="logo">
-          <img src="/images/mirazurrojo.svg" width="160" height="50" alt="Grilli - Inicio">
+          <img src="{{asset('images/mirazurrojo.svg') }}" width="160" height="50" alt="Grilli - Inicio">
         </a>
         <!-- Lista de enlaces del menú -->
         <ul class="navbar-list">
@@ -103,15 +104,9 @@
             </a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
-              <div class="separator"></div>
-              <span class="span">Nuestros Chefs</span>
-            </a>
-          </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="#contacto" class="navbar-link hover-underline">
               <div class="separator"></div>
               <span class="span">Contacto</span>
             </a>
@@ -135,6 +130,7 @@
             +51 902106989
           </a>
         </div>
+        
 
       </nav>
       <a href="#" class="btn btn-secondary">

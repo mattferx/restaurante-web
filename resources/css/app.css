@@ -1,4 +1,3 @@
-
 :root {
 
   /**
@@ -364,6 +363,7 @@ body.nav-active { overflow: hidden; }
   color: var(--smoky-black-1);
 }
 
+
 .btn:is(:hover, :focus-visible)::before { bottom: -50%; }
 
 .btn:is(:hover, :focus-visible) .text-1 { transform: translateY(-40px); }
@@ -372,10 +372,45 @@ body.nav-active { overflow: hidden; }
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.btn-primary {
+  border: 2px solid var(--rojito-claro);
+}
+
+
+.btn-primary:hover {
+  border-color: var(--gold-crayola); 
+}
+
 
 .btn-secondary {
   background-color: var(--gold-crayola);
   color: var(--black);
+}
+
+
+.btn-secondary-3 {
+  background-color: var(--gold-crayola);
+  color: var(--black);
+  width: 100%; 
+  max-width: 100%; 
+  text-align: center; 
+  display: block; 
+}
+
+.btn-secondary-3::before {
+  background-color: var(--smoky-black-1);
+}
+
+.btn-secondary-3 .text-2 {
+  color: var(--white);
+}
+
+
+.btn-secondary-3:is(:hover, :focus-visible)::before { bottom: -50%; }
+.btn-secondary-3:is(:hover, :focus-visible) .text-1 { transform: translateY(-40px); }
+.btn-secondary-3:is(:hover, :focus-visible) .text-2 {
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn-secondary::before { background-color: var(--smoky-black-1); }
@@ -1177,6 +1212,21 @@ body.nav-active { overflow: hidden; }
 }
 
 .footer-brand .icon-wrapper .input-field { cursor: text; }
+.footer-brand .icon-wrapper .input-field {
+  cursor: text;
+  font-size: 14px;
+  padding: 10px 12px; /* menos padding vertical si estaba muy alto */
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--quick-silver); /* o el color que uses */
+  color: var(--white); /* asegurate que el texto sea visible */
+  background-color: transparent; /* evita fondo blanco por accidente */
+  z-index: 10;
+  position: relative;
+  overflow: visible;
+}
+
 
 .footer-brand .btn { min-width: 100%; }
 
@@ -1206,6 +1256,8 @@ body.nav-active { overflow: hidden; }
   color: var(--gold-crayola);
   text-decoration: underline;
 }
+
+
 
 
 
