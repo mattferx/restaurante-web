@@ -1,9 +1,8 @@
 'use strict';
 
 /**
- * PRELOADER 
+ * PRELOADER
  */
-
 const preloader = document.querySelector("[data-preaload]");
 
 window.addEventListener("load", function () {
@@ -12,7 +11,7 @@ window.addEventListener("load", function () {
 });
 
 /**
- * NAVBAR 
+ * NAVBAR
  */
 const navbar = document.querySelector("[data-navbar]"); // Menú de navegación
 const navTogglers = document.querySelectorAll("[data-nav-toggler]"); // Botones que abren/cierra el menú
@@ -23,7 +22,7 @@ const toggleNavbar = function () {
   navbar.classList.toggle("active"); // Abre/cierra el menú
   overlay.classList.toggle("active"); // Muestra/oculta el overlay
   document.body.classList.toggle("nav-active"); // Bloquea/desbloquea el scroll
-}
+};
 
 // Añade el evento a todos los botones que controlan el menú
 addEventOnElements(navTogglers, "click", toggleNavbar);
@@ -44,8 +43,7 @@ const hideHeader = function () {
     header.classList.remove("hide");
   }
   lastScrollPos = window.scrollY;
-}
-
+};
 
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
@@ -81,7 +79,7 @@ const updateSliderPos = function () {
   lastActiveSliderItem.classList.remove("active");
   heroSliderItems[currentSlidePos].classList.add("active");
   lastActiveSliderItem = heroSliderItems[currentSlidePos];
-}
+};
 
 // Cambia a la siguiente diapositiva
 const slideNext = function () {
@@ -91,8 +89,7 @@ const slideNext = function () {
     currentSlidePos++; // Avanza una posición
   }
   updateSliderPos();
-}
-
+};
 
 heroSliderNextBtn.addEventListener("click", slideNext);
 
@@ -104,13 +101,12 @@ const slidePrev = function () {
     currentSlidePos--; // Retrocede una posición
   }
   updateSliderPos();
-}
-
+};
 
 heroSliderPrevBtn.addEventListener("click", slidePrev);
 
 /**
- * AUTO SLIDE 
+ * AUTO SLIDE
  */
 let autoSlideInterval;
 
@@ -118,7 +114,7 @@ const autoSlide = function () {
   autoSlideInterval = setInterval(function () {
     slideNext(); // Va a la siguiente diapositiva automáticamente
   }, 7000);
-}
+};
 
 // Detiene el auto-slide cuando pasas el mouse sobre los botones
 addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
@@ -140,44 +136,46 @@ let x, y;
 
 // Detecta el movimiento del mouse
 window.addEventListener("mousemove", function (event) {
-
   // Calcula posición relativa del mouse
-  x = (event.clientX / window.innerWidth * 10) - 5;
-  y = (event.clientY / window.innerHeight * 10) - 5;
-
-  // Invierte los valores para el efecto
-  x = x - (x * 2);
-  y = y - (y * 2);
+  x = -(event.clientX / window.innerWidth * 10) + 5;
+  y = -(event.clientY / window.innerHeight * 10) + 5;
 
   // Aplica la transformación a cada elemento con parallax
   for (let i = 0, len = parallaxItems.length; i < len; i++) {
-    x = x * Number(parallaxItems[i].dataset.parallaxSpeed); // Aplica velocidad personalizada
-    y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
-    parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`; // Aplica el movimiento
+    const parallaxSpeed = Number(parallaxItems[i].dataset.parallaxSpeed);
+    parallaxItems[i].style.transform = `translate3d(${x * parallaxSpeed}px, ${y * parallaxSpeed}px, 0px)`; // Aplica el movimiento
   }
-  document.addEventListener('DOMContentLoaded', function() {
-    new Swiper('.testimonios-slider', {
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        992: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        }
-      }
-    });
-  });
-  
+});
 
+/**
+ * FORMULARIO DE RESERVA
+ */
+document.querySelector('.reservation form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita la recarga de la página
+
+  let form = this;
+  let data = new FormData(form);
+
+  fetch(form.action, {
+    method: 'POST',
+    body: data,
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Error en la red");
+    }
+    return response.json(); // Procesa la respuesta JSON
+  })
+  .then(data => {
+    if (data.success) {
+      form.reset(); // Resetea el formulario
+      alert(data.message || "¡Reserva realizada con éxito!");
+    } else {
+      alert(data.message || "Hubo un problema con tu reserva. Por favor, intenta nuevamente.");
+    }
+  })
+  .catch(error => {
+    console.error(error); // Muestra el error en la consola
+    alert("Ocurrió un error inesperado. Intenta nuevamente más tarde.");
+  });
 });

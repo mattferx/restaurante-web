@@ -1456,17 +1456,18 @@ body.nav-active { overflow: hidden; }
 .footer-brand .icon-wrapper .input-field {
   cursor: text;
   font-size: 14px;
-  padding: 10px 12px; /* menos padding vertical si estaba muy alto */
+  padding: 10px 12px; 
   line-height: 1.4;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid var(--quick-silver); /* o el color que uses */
-  color: var(--white); /* asegurate que el texto sea visible */
-  background-color: transparent; /* evita fondo blanco por accidente */
+  border: 1px solid var(--quick-silver); 
+  color: var(--white); 
+  background-color: transparent; 
   z-index: 10;
   position: relative;
   overflow: visible;
 }
+
 
 
 .footer-brand .btn { min-width: 100%; }
